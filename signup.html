@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Sign up Retroshare</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	
+    <!-- Custom styles for this template -->
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+
+      <form class="form-signin" role="form" data-toggle="validator">
+        <h2 class="form-signin-heading" style="text-align:center;">Create a new Identity</h2>
+       <div class="form-group">
+		<label for="inputName" class="sr-only">Name</label>
+        <input type="usr" id="inputName" class="form-control" placeholder="Name" required autofocus>
+       </div>
+	   <div class="form-group">
+		<label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" data-minlength="6" class="form-control" placeholder="Password" required>
+        <span class="help-block">Minimum of 6 characters</span>
+	   </div>
+	   <div class="form-group">
+		<label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" onclick="checkPasswordMatch()" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+		<div id="checkPasswordMatch"></div>
+	   </div>
+		
+		<div class="form-group">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Generate new Identity</button>
+		</div>		
+	  </form>
+
+    </div> <!-- /container -->
+	<script src="js/validator.js"></script> <!-- Js file for validation of password matching-->
+</body>
+</html>

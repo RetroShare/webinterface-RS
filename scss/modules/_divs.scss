@@ -1,0 +1,53 @@
+#cover {
+	margin-top: 60px;
+	min-height: 180px;
+}
+
+#my_file {
+    display: none;
+}
+
+.jumbotron{
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 15px !important;
+	padding-right: 15px !important; 
+	min-height: 180px;
+	background-image: url("../img/cover.jpg");
+	background-repeat: no-repeat !important;
+	background-size: cover;
+}
+
+.statusBox {
+	width: 100%;
+	border: 1px solid gray;
+}
+
+.statusId, .status {
+	width:651px; 
+	height:32px; 
+	padding: 5px 5px 0 5px;
+	
+	.statusComment {
+		height: 30px;
+	}
+	
+
+	p{
+		float: left;
+		font-size: 15px;
+	}
+	
+	img {
+		height:30px;
+		width:30px;
+		float: left;
+		border: 1px solid black !important;
+		overflow: hidden;
+	}
+}
+
+ 
+
+
+

@@ -1,0 +1,24 @@
+/*
+	Project
+	Author: Ksenija Zivkovic
+	Version: 0.0.1
+*/
+
+/* BASE - Base styles, variables, mixins, etc */
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_reset.scss';
+@import 'base/_base.scss';
+
+/* LAYOUT - Page layout styles */
+
+@import 'layout/_header.scss';
+@import 'layout/_nav.scss';
+@import 'layout/_footer.scss';
+
+/* MODULES - Individual site components */
+
+@import 'modules/_divs.scss';
+@import 'modules/_forms.scss';
+
